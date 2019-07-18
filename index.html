@@ -8,15 +8,15 @@
     <title>Belajar Vue Js</title>
 
     <style>
-        .color-red {
-            color: red;
+        .is-loading {
+            background: red;
         }
     </style>
 </head>
 
 <body>
     <div id="app">
-        <h1 :class="className">Hello World</h1>
+        <button :class="{ 'is-loading' : isLoading }" @click="toggleClass">Click Me</button>
     </div>
 
 

@@ -1,8 +1,14 @@
 var app = new Vue({
     el: '#app',
     data: {
-        className: 'color-red'
+        isLoading: false
     },
+
+    methods: {
+        toggleClass() {
+            this.isLoading = true;
+        }
+    }
 
 
 
