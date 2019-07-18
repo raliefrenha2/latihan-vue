@@ -3,5 +3,6 @@ new Vue({
     data: {
         message: '',
         textarea: '',
+        radiobutton: '',
     }
 })
