@@ -10,7 +10,9 @@
 
 <body>
     <div id="app">
-        {{ message }}
+        <ul>
+            <li v-for="name in names">{{ name }}</li>
+        </ul>
     </div>
 
     <script src="assets/vendor/vue.js"></script>
