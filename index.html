@@ -10,7 +10,8 @@
 
 <body>
     <div id="app">
-        {{ message }}
+        <p v-if="show">{{ message }}</p>
+        <p v-else="show">{{ message2 }}</p>
     </div>
 
     <script src="assets/vendor/vue.js"></script>
