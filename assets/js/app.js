@@ -2,19 +2,16 @@ var app = new Vue({
     el: '#app',
     data: {
         message: 'Hello World',
+        newName: '',
         names: ['Joe', 'Mary', 'Jane', 'Jack']
     },
-    mounted() {
 
-        document.querySelector('#button').addEventListener('click', () => {
-            let name = document.querySelector('#input');
+    methods: {
+        addName() {
+            this.names.push(this.newName);
+            this.newName = '';
 
-            app.names.push(name.value);
+        }
+    },
 
-
-            name.value = '';
-
-        })
-
-    }
 });
