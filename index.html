@@ -10,12 +10,7 @@
 
 <body>
     <div id="app">
-        <ul>
-            <li v-for="name in names" v-text="name"></li>
-        </ul>
-
-        <input type="text" v-model="newName">
-        <button @click="addName">Add Name</button>
+        <button v-bind:title="title">Hover Over Me</button>
     </div>
 
 

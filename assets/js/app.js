@@ -1,17 +1,9 @@
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello World',
-        newName: '',
-        names: ['Joe', 'Mary', 'Jane', 'Jack']
+        title: 'Now the title is being set through JavaScript.'
     },
 
-    methods: {
-        addName() {
-            this.names.push(this.newName);
-            this.newName = '';
 
-        }
-    },
 
 });
