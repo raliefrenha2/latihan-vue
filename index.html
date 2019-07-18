@@ -11,7 +11,9 @@
 <body>
     <div id="app">
         <p>{{ message }}</p>
-        <p>Hasil dari penjumlahan {{ int1 }} + {{ int2 }} = {{ sum }}</p>
+        <p>Hasil dari penjumlahan {{ int1 }} + {{ int2 }} = {{ result }}</p>
+
+        <button v-on:click="sumProcess">Proses</button>
     </div>
 
     <script src="assets/vendor/vue.js"></script>
