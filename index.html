@@ -10,12 +10,24 @@
 </head>
 
 <body>
-    <div id="app">
-
+    <div id="app"></div>
+    <div id="app2">
+        <h1 class="title is-1" :title="menu">{{ title }}</h1>
+        <p v-text="content"></p>
     </div>
 
     <script src="assets/vendor/vue.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        new Vue({
+            el: '#app2',
+            data: {
+                title: 'My Title',
+                content: 'My Content',
+                menu: 'My menu'
+            }
+        })
+    </script>
 </body>
 
 </html>
