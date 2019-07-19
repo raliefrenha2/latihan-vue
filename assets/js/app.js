@@ -1,12 +1,12 @@
 var app = new Vue({
     el: '#app',
     data: {
-        isLoading: false
+        isButtonDisabled: false
     },
 
     methods: {
-        toggleClass() {
-            this.isLoading = true;
+        disabledButton() {
+            this.isButtonDisabled = true;
         }
     }
 

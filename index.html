@@ -16,7 +16,7 @@
 
 <body>
     <div id="app">
-        <button :class="{ 'is-loading' : isLoading }" @click="toggleClass">Click Me</button>
+        <button :disabled="isButtonDisabled" @click="disabledButton">Click Me</button>
     </div>
 
 
